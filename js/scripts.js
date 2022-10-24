@@ -1,10 +1,13 @@
-const ul = document.createElement("ul");
+
+// business logic
 const suits = ["spades", "hearts", "clubs", "diamonds"];
 const ranks = ["ace", 2, 3, 4, 5, 6, 7, 8, 9, 10, "jack", "queen", "king"];
 
+// user interface logic
+const ul = document.createElement("ul");
+
 window.addEventListener("load", function(){
 suits.forEach(function(suit) {
-
   ranks.forEach(function(rank) {
   const li = document.createElement("li");
   li.append(rank + ' of ' + suit);
